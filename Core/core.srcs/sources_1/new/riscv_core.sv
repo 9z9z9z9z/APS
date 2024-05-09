@@ -75,7 +75,7 @@ module riscv_core(
                           (b_sel  == 'b010) ? imm_U : ((b_sel == 'b011) ? imm_S : 'b100)));
     assign wb_data      = (wb_sel == 'b00 ) ? alu_result : ((wb_sel == 'b01) ? mem_rd_i : csr_wd);
     
-    assign PC_Loop_b_i = (jal | (flag & branch)) ?  (
+    assign PC_Loop_b_i  = (jal | (flag & branch)) ?  (
         (branch) ? imm_B : imm_J
     ) : 'b100;
     
@@ -148,7 +148,7 @@ module riscv_core(
         .wb_sel_o(wb_sel),
         .mem_we_o(mem_we),
         .mem_req_o(mem_req),
-        .mem_size_o(mem_soze_o),        
+        .mem_size_o(mem_size_o),        
         .branch_o(branch),
         .jal_o(jal),
         .jalr_o(jalr),
