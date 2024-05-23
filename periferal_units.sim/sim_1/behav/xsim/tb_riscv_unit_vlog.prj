@@ -1,0 +1,29 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../Made-up modules/PS2Receiver.sv" \
+"../../../../../opcodes/alu_opcodes_pkg.sv" \
+"../../../../../PPD/PPD.srcs/sources_1/imports/new/alu_riscv.sv" \
+"../../../../../opcodes/csr_pkg.sv" \
+"../../../../../opcodes/riscv_pkg.sv" \
+"../../../../../../decoder/decoder.srcs/sources_1/new/decoder_riscv.sv" \
+"../../../../../PPD/PPD.srcs/sources_1/imports/new/instr_mem.sv" \
+"../../../../../Made-up modules/lab_01.fulladder32.sv" \
+"../../../../../Made-up modules/lab_07.ext_mem.sv" \
+"../../../../../Made-up modules/lab_08.lsu.sv" \
+"../../../../../Made-up modules/lab_10.csr.sv" \
+"../../../../../Made-up modules/lab_10.irq.sv" \
+"../../../../periferal_units.srcs/sim_1/new/ps2_sb_ctrl.sv" \
+"../../../../../PPD/PPD.srcs/sources_1/imports/new/rf_riscv.sv" \
+"../../../../periferal_units.srcs/sources_1/new/riscv_core.sv" \
+"../../../../periferal_units.srcs/sources_1/new/riscv_unit.sv" \
+"../../../../../Made-up modules/sys_clk_rst_gen.sv" \
+"../../../../periferal_units.srcs/sources_1/new/vga_sb_ctrl.sv" \
+"../../../../../Made-up modules/vgachargen_pkg.sv" \
+"../../../../../Made-up modules/vgachargen.sv" \
+"../../../../tb_riscv_unit.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

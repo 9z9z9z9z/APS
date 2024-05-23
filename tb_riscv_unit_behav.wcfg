@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_riscv_unit_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="alu_opcodes_pkg" />
+            <top_module name="csr_pkg" />
+            <top_module name="glbl" />
+            <top_module name="riscv_pkg" />
+            <top_module name="tb_riscv_unit" />
+            <top_module name="vgachargen_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="902819000fs"></ZoomStartTime>
+      <ZoomEndTime time="903995001fs"></ZoomEndTime>
+      <Cursor1Time time="903015000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="161"></NameColumnWidth>
+      <ValueColumnWidth column_width="108"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wvobject type="logic" fp_name="/tb_riscv_unit/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_riscv_unit/dut/core/instr_i">
+      <obj_property name="ElementShortName">instr_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">instr_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_riscv_unit/dut/core/RgisterFile/rf_mem">
+      <obj_property name="ElementShortName">rf_mem[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf_mem[0:31][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_riscv_unit/ps2_clk">
+      <obj_property name="ElementShortName">ps2_clk</obj_property>
+      <obj_property name="ObjectShortName">ps2_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_riscv_unit/ps2_dat">
+      <obj_property name="ElementShortName">ps2_dat</obj_property>
+      <obj_property name="ObjectShortName">ps2_dat</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_riscv_unit/dut/ps2_rd">
+      <obj_property name="ElementShortName">ps2_rd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ps2_rd[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_riscv_unit/dut/vga_rd">
+      <obj_property name="ElementShortName">vga_rd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">vga_rd[31:0]</obj_property>
+   </wvobject>
+</wave_config>
